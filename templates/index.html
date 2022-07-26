@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content%}
+>
+<div class="container">
+    <div class="row">
+          <div class="card-group">
+          <div class="card bg-light   text-white bg-opacity-10" style="width: 18rem;">
+            <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcT2flpNZx086BC6BmM-NlHkukeLeHgtDwKFU-4RX0NNegXJIKV8EGvm7Rlt3sgSlckT" class="card-img-top rounded" alt="...">
+            <div class="card-body border-opacity-25">
+              <h5 class="card-title">New York</h5>
+              <h5>Temperature: {{new_york_temp}}*C</h5>
+              
+              <h5><i class="bi bi-clouds"></i>{{new_york_desc}}</i></h5>
+            </div>
+          </div>
+        
+       
+          <div class="card  bg-light text-white bg-opacity-10" style="width: 18rem;">
+            <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQPJW6ZzxcV4D9hsntfSNL8CJTOCaFA2buPgASwPtwn-bKrnZEAOuggCcjFixE19o6u" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">London</h5>
+              <h5>Temperature: {{london_temp}}*C</h5>
+              <h5>{{london_desc}}</h5>
+            </div>
+          </div>
+          
+          
+          <div class="card bg-light text-white bg-opacity-10" style="width: 18rem;">
+            <img src="https://annaeverywhere.com/wp-content/uploads/2021/10/where-to-stay-in-Warsaw.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Warsaw</h5>
+              <h5>Temperature: {{warsaw_temp}}*C</h5>
+              <h5>{{warsaw_desc}}</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
