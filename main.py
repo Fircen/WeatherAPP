@@ -4,7 +4,7 @@ import requests
 import json
 app = Flask(__name__)
 
-API_KEY = "f80b0b8d6bceff54dc1427ab93fa1914"
+API_KEY = "###"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 
