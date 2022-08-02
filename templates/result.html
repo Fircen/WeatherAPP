@@ -1,11 +1,15 @@
  {% extends 'base.html' %}
 
  {% block content %}
-<div class="container h-100">
-    <div class="col-6">
-        <div class="card border-0 p-3">
-            <h3>Current Weather for {{ city }}</h3>
-            <h5>Temperature: {{ temp }} </h5>
+<div class="container  ">
+   
+    <div class="row justify-content-md-center">
+        <div class="card bg-light   text-white bg-opacity-10 text-center  " style="width: 30rem;">
+            <h5>Current Weather for {{ weather.city| title }}</h5> 
+            <h5>{{ weather.time }} </h5>
+            <h5>Temperature: {{ weather.temperature | round }} </h5>
+              <h5><figure class="image is-100x100">{{weather.description| title }} 
+                <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image"></h5>
         </div>
     </div>
 </div> 

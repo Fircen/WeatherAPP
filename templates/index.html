@@ -7,10 +7,13 @@
           <div class="card bg-light   text-white bg-opacity-10" style="width: 18rem;">
             <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcT2flpNZx086BC6BmM-NlHkukeLeHgtDwKFU-4RX0NNegXJIKV8EGvm7Rlt3sgSlckT" class="card-img-top rounded" alt="...">
             <div class="card-body border-opacity-25">
-              <h5 class="card-title">New York</h5>
-              <h5>Temperature: {{new_york_temp}}*C</h5>
-              
-              <h5><i class="bi bi-clouds"></i>{{new_york_desc}}</i></h5>
+              <h5>Current Weather for {{ new_york.city| title }}</h5> 
+              <h5>{{ new_york.time }} </h5>
+              <h5>Temperature: {{ new_york.temperature | round }} </h5>
+                <h5><figure class="image is-100x100">{{new_york.description| title }} 
+                  <img src="http://openweathermap.org/img/w/{{ new_york.icon }}.png" alt="Image"></h5>
+            </figure>
+           
             </div>
           </div>
         
@@ -18,9 +21,13 @@
           <div class="card  bg-light text-white bg-opacity-10" style="width: 18rem;">
             <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQPJW6ZzxcV4D9hsntfSNL8CJTOCaFA2buPgASwPtwn-bKrnZEAOuggCcjFixE19o6u" class="card-img-top rounded" alt="...">
             <div class="card-body">
-              <h5 class="card-title">London</h5>
-              <h5>Temperature: {{london_temp}}*C</h5>
-              <h5>{{london_desc}}</h5>
+              <h5>Current Weather for {{ london.city| title }}</h5> 
+              <h5>{{ london.time }} </h5>
+              <h5>Temperature: {{ london.temperature | round }} </h5>
+              <h5><figure class="image is-100x100">{{london.description| title }} 
+                <img src="http://openweathermap.org/img/w/{{ london.icon }}.png" alt="Image"></h5>
+            </figure>
+           
             </div>
           </div>
           
@@ -28,9 +35,13 @@
           <div class="card bg-light text-white bg-opacity-10" style="width: 18rem;">
             <img src="https://annaeverywhere.com/wp-content/uploads/2021/10/where-to-stay-in-Warsaw.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Warsaw</h5>
-              <h5>Temperature: {{warsaw_temp}}*C</h5>
-              <h5>{{warsaw_desc}}</h5>
+              <h5>Current Weather for {{ warsaw.city| title }}</h5> 
+              <h5>{{ warsaw.time }} </h5>
+              <h5>Temperature: {{ warsaw.temperature | round }} </h5>
+              <h5><figure class="image is-100x100">{{warsaw.description| title }} 
+                <img src="http://openweathermap.org/img/w/{{ warsaw.icon }}.png" alt="Image"></h5>
+              </figure>
+              
             </div>
           </div>
         </div>
